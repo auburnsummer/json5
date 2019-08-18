@@ -1,3 +1,8 @@
+
+I have a situation where I have to parse a lot of malformed JSON in a proprietary domain, so this repository contains a modified JSON5 parser to do so
+
+You probably shouldn't use this.
+
 # JSON5 – JSON for Humans
 
 [![Build Status](https://travis-ci.org/json5/json5.svg)][Build Status]
