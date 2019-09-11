@@ -186,18 +186,6 @@ describe('JSON5', () => {
                 ))
             })
 
-            it('throws on invalid new lines in strings', () => {
-                assert.throws(() => {
-                    JSON5.parse('"\n"')
-                },
-                err => (
-                    err instanceof SyntaxError &&
-                    /^JSON5: invalid character '\\n'/.test(err.message) &&
-                    err.lineNumber === 2 &&
-                    err.columnNumber === 0
-                ))
-            })
-
             it('throws on unterminated strings', () => {
                 assert.throws(() => {
                     JSON5.parse('"')
