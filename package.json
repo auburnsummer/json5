@@ -16,6 +16,7 @@
     "build": "rollup -c",
     "build-package": "node build/package.js",
     "build-unicode": "node build/unicode.js",
+    "package": "pkg lib/cli.js --out-path pkg_builds",
     "coverage": "tap --coverage-report html test",
     "lint": "eslint --fix .",
     "prepublishOnly": "npm run production",
