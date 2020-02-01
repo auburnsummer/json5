@@ -1,7 +1,7 @@
 {
-  "name": "json5",
-  "version": "2.1.0",
-  "description": "JSON for humans.",
+  "name": "rdlevel",
+  "version": "0.0.1",
+  "description": "rdlevel parser based off JSON5 code.",
   "main": "lib/index.js",
   "bin": "lib/cli.js",
   "browser": "dist/index.js",
@@ -22,12 +22,12 @@
     "prepublishOnly": "npm run production",
     "preversion": "npm run production",
     "production": "npm run lint && npm test && npm run build",
-    "test": "tap -Rspec --100 test",
+    "test": "tap test",
     "version": "npm run build-package && git add package.json5"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/json5/json5.git"
+    "url": "git+https://github.com/rhythm-cafe/rdlevel.git"
   },
   "keywords": [
     "json",
